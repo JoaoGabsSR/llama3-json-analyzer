@@ -2,9 +2,9 @@
 
 ## Preparing Environment for Application
 
-- Go to the official LLama3 website [here](https://ollama.com/).
+- Go to the official LLama3 website [here](https://ollama.com/). Download the llama3 model and following the step by step described on the website.
 - Download the version based on your operating system.
-- Clone this repo and type the following commands in the terminal:
+- Before type the following commands in the terminal:
 
 ```bash
 # Clone the repository
