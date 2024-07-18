@@ -22,37 +22,36 @@ yarn start:dev
 
 ## About the Application
 
-This a simple application where you can send only json file with this formatting:
+This is a simple application where you can send only JSON files with this format:
 
-```json
+```JSON
 {
   "prompt": "",
   "data": ""
 }
 ```
 
-If it's your preference you can use the file in folder json.&nbsp;&nbsp;
-The response it usually takes a while, because the response from the AI is calculated and based in the your desktop processor capacity and ram memory.
+If you prefer, you can use the file in the json folder. The response usually takes a while because the AI's response time depends on your desktop's processor capacity and RAM memory.
 
 ## Routes
 
-This application in the moments has a only route:
+This application currently has only one route:
 
 ```bash
   /json/upload
 ```
 
-To send the json you can use a client of your preference, to send this, you can use multipart form with file and its variable name must be "file".
+To send the JSON, you can use a client of your choice. Use multipart form with the file, and its variable name must be "file".
 Response:
 
-```json
-  { response: string }
+```JSON
+  { "response": "string" }
 ```
 
-Remenber if you running this application in your desktop the base route is:
+Remember, if you are running this application on your desktop, the base route is:
 
 ```bash
   http://localhost:3000
 ```
 
-You can alter the port of the application adding a .env file based on .env.example in root in this project.
+You can change the application's port by adding a .env file based on .env.example in the root of this project.
