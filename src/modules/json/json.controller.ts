@@ -6,8 +6,8 @@ import {
   UploadedFile,
   UseInterceptors,
 } from '@nestjs/common';
-import { JsonService } from './json.service';
 import { FileInterceptor } from '@nestjs/platform-express';
+import { JsonService } from './json.service';
 
 @Controller('json')
 export class JsonController {
@@ -18,7 +18,9 @@ export class JsonController {
   uploadFile(
     @UploadedFile(
       new ParseFilePipe({
-        validators: [new FileTypeValidator({ fileType: 'application/json' })],
+        validators: [
+          new FileTypeValidator({ fileType: 'application/json' }),
+        ],
       }),
     )
     file: Express.Multer.File,
